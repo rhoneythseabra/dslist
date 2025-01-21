@@ -26,8 +26,7 @@ public class Game {
 	private String shortDescription;
 	private String longDescription;
 	
-	public Game() {
-		
+	public Game() {	
 	}
 
 	public Game(Long id, String title, Integer year, String genre, String platform, String imgUrl,
@@ -46,8 +45,8 @@ public class Game {
 	public Long getId() {
 		return id;
 	}
-		
-	public void setId(Long ind) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -55,8 +54,8 @@ public class Game {
 		return title;
 	}
 
-	public void setTitle(String tittle) {
-		this.title = tittle;
+	public void setTitle(String title) {
+		this.title = title;
 	}
 
 	public Integer getYear() {
@@ -123,6 +122,9 @@ public class Game {
 		Game other = (Game) obj;
 		return Objects.equals(id, other.id);
 	}
+
+	
+	
 	
 	
 	
