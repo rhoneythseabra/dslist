@@ -34,14 +34,14 @@ public class Game {
 	public Game() {
 	}
 
-	public Game(Long id, String title, Integer year, String gente, String platform, Double score, String imgUrl,
+	public Game(Long id, String title, Integer year, String genre, String platforms, Double score, String imgUrl,
 			String shortDescription, String longDescription) {
 
 		this.id = id;
 		this.title = title;
 		this.year = year;
-		this.genre = gente;
-		this.platforms = platform;
+		this.genre = genre;
+		this.platforms = platforms;
 		this.score = score;
 		this.imgUrl = imgUrl;
 		this.shortDescription = shortDescription;
@@ -72,19 +72,19 @@ public class Game {
 		this.year = year;
 	}
 
-	public String getGente() {
+	public String getGenre() {
 		return genre;
 	}
 
-	public void setGente(String gente) {
+	public void setGenre(String gente) {
 		this.genre = gente;
 	}
 
-	public String getPlatform() {
+	public String getPlatforms() {
 		return platforms;
 	}
 
-	public void setPlatform(String platform) {
+	public void setPlatforms(String platform) {
 		this.platforms = platform;
 	}
 
